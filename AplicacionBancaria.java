@@ -14,11 +14,12 @@ public class AplicacionBancaria {
         ArrayList <String> movimientosRealizados = new ArrayList<>();
         Scanner teclado = new Scanner(System.in);
         int inputUsuario;
+        System.out.println("*************************************************");
+        System.out.println("Bienvenido de vuelta!" + nombreDeCuenta);
+        System.out.println("Dinero en cuenta: "+ cuenta);
         String menu = String.format("""
-                *************************************************
-                Bienvenido de vuelta! %s
+                
                 Ingrese una opción, según su consulta...
-                Cuenta: %2f$USD
                 1- Realizar un depósito.
                 2- Retirar dinero.
                 3- Realizar una transferencia.
@@ -122,6 +123,7 @@ public class AplicacionBancaria {
                     break;
                 }
             }
+            System.out.println("Dinero en cuenta: "+ cuenta);
             System.out.println(menu);
             inputUsuario = teclado.nextInt();
             teclado.nextLine();
