@@ -122,6 +122,9 @@ public class AplicacionBancaria {
                             """);
                     break;
                 }
+                default:{
+                    System.out.println("OPCIÓN INVÁLIDA!");
+                }
             }
             System.out.println("Dinero en cuenta: "+ cuenta);
             System.out.println(menu);
